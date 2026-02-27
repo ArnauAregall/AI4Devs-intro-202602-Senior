@@ -1,8 +1,10 @@
 # Tool Used
 
+```
 Claude 1.1.4498 (24f768) 2026-02-26T19:47:09.000Z
-
 Claude Sonnet 4.6
+```
+
 ---
 
 # Persona
@@ -52,3 +54,7 @@ Use this seed as a starting point:
 - Generate the necessary files for a modern application repository that generates this single static page.
 - Implement unit tests for the JavaScript code and provide a way to run them.
 - The website should be easily deployable to GitHub pages so I can share it with my colleagues.
+
+---
+
+The GitHub workflow fails as it can't find the package-lock.json file. The root directory of the application is inside `reversestring-AAA`. Adapt accordingly the steps in the workflow so it takes that into account.
