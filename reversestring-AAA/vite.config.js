@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  root: 'src',
-  build: {
-    outDir: '../dist',
-    emptyOutDir: true,
-  },
-  test: {
-    include: ['../test/**/*.test.js'],
-  },
+    root: 'src',
+    base: '/AI4Devs-intro-202602-Senior/',
+    build: {
+        outDir: '../dist',
+        emptyOutDir: true,
+    },
+    test: {
+        include: ['../test/**/*.test.js'],
+    },
 })
