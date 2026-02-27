@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse String</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <main class="container">
+    <header class="header">
+      <span class="label-tag">string reversal</span>
+      <h1 class="title">Type.<br>See it flip.</h1>
+    </header>
+
+    <section class="tool">
+      <div class="input-wrapper">
+        <label for="inputField" class="sr-only">Enter text to reverse</label>
+        <input
+          id="inputField"
+          type="text"
+          class="input-field"
+          placeholder="Type or paste anything…"
+          autocomplete="off"
+          spellcheck="false"
+          aria-label="Text input to reverse"
+          aria-describedby="hint"
+        >
+        <div class="input-line"></div>
+      </div>
+
+      <p id="hint" class="hint" aria-live="polite">
+        <span class="hint-icon">↓</span>
+        enter at least <strong>3 characters</strong> to see the reversal
+      </p>
+
+      <div class="output-wrapper" aria-live="polite" aria-atomic="true">
+        <output id="outputField" class="output-field" for="inputField" aria-label="Reversed text"></output>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Unicode-aware · works with emoji 🔥 &amp; scripts عربي</p>
+    </footer>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
